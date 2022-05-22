@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+    <header>
+        <link rel="stylesheet" href="paint.css">
+    </header>
+<body>
+
+<div style="margin-left: 300px;">
+    <button class="btn" type="button" id="doodle_btn">Doodle</button>
+
+    <button class="btn" type="button" id="line_btn">Line</button>
+
+    <button class="btn" type="button" id="rect_btn">Rectangle</button>
+
+    <button class="btn" type="button" id="circle_btn">Circle</button>
+
+    <button class="btn" type="button" id="erase_btn">erase</button>
+    <br><br>
+    <div id="clr_div">
+    Pick a color <input class="clr" onchange="colorSelected(this)" type="color"></div>
+    <br>
+    <br>
+    </div>
+
+    <canvas id="myCanvas" width="1000" height="400" style="border: 2px solid rgb(146, 28, 28); margin-left: 150px;"></canvas>
+    
+  <script src="paint.js"></script>
+</body>
+
+</html>

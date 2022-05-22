@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="Form Validation.css">
+    </head>
+    <body>
+        <form oninput="val.value=ran.value + '$'" class="MyForm" id="myFormName"> 
+            <h1>My Form</h1>
+            <p class="texts">Name<input class="inputs" type="text" placeholder="Enter Username"required/></p>
+            <p class="texts">Email<input class="inputs" type="text" placeholder="Enter Email"
+                pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}"
+                required/></p>
+            <p class="texts">Password<input id="password" class="inputs" type="password" placeholder="Enter Password"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" 
+                required/></p>
+            <p class="error password_error"></p>
+            <p class="texts">Salary<input class="inputs" type="range" name="ran"/>
+                <output name="val"></output>
+            </p>
+            <p class="texts">Age<input class="inputs" type="number" placeholder="Enter your age" min="21"/></p>
+            <input class="SignUpBtn" type="submit" value="Submit"/>
+            <br>
+            <br>
+        </form>
+        <!-- <script>
+            var Myform = document.getElementById("myFormName");
+            var Password = document.getElementById("password");
+            const Form_Submit = function (e) {
+            e.preventDefault();
+            var Password_Error = document.getElementsByClassName("password_error")[0];
+            Password_Error.textContent = Password.value.length > 8 || Password.value.length < 8 ? "Password must be 8 characters at least." : "";
+             };
+            Myform.addEventListener("submit", Form_Submit);
+        </script> -->
+    </body>
+</html>

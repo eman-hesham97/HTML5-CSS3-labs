@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <div style="margin-left: 200px;">
+    <button type="button" onclick="Line()" style="background-color: blueviolet; color: white; cursor: pointer;">Line</button>
+    <button type="button" onclick="Rect()" style="background-color: blueviolet; color: white; cursor: pointer;">Rectangle</button>
+    <button type="button" onclick="Circle()" style="background-color: blueviolet; color: white; cursor: pointer;">Circle</button>
+    <br>
+    <br>
+</div>
+    <svg id="MySVG" width="600" height="600"  style="border: 2px solid black">
+    <rect id="rect" x="10" y="400" width="200" height="150" fill="blue" style="visibility: hidden;" />
+    <circle id="circle" r="100" cx="350" cy="350" fill="green" style="visibility: hidden;"/>
+    <line id="line" x1="10" y1="10" x2="200" y2="200" style="stroke:rgb(255,0,0);stroke-width:2; visibility: hidden;" />
+    
+    <script>
+    function Line() {
+    document.getElementById("line").style.visibility = "visible";
+    }
+                    
+    function Rect() {
+    document.getElementById("rect").style.visibility = "visible";
+    }
+
+    function Circle() {
+        document.getElementById("circle").style.visibility = "visible";
+            }
+    </script>
+</body>
+</html>

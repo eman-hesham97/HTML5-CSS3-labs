@@ -1,0 +1,16 @@
+.btn{
+    margin-left: 50px;
+    background-color: rgb(146, 28, 28); 
+    color: white; 
+    cursor: pointer;
+    height: 40px;
+    width: 100px;
+}
+.clr{
+    margin-left: 20px;
+    cursor: pointer;
+    height: 40px;
+}
+#clr_div{
+    margin-left: 250px;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="myTodo.css">  
+    <h1>My Todo List ^-^</h1>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="inputfield">
+            <input  class="input" type="text" placeholder="Add New Task">
+            <button class="add">Add Task</button>
+        </div>
+
+        <ul class="todolist">
+            <li>
+                <input type="checkbox" id="myCheck" onclick="myFunction()">
+                <span><i class="fa fa-trash-o" style="font-size:24px"></i>
+                </li>
+            </span>
+        </ul>
+
+        <div class="footer">
+            <button class="clear">Clear All</button>
+            <br>
+        </div>
+
+    </div>
+    <script src="myTodo.js"></script>
+</body>
+
+</html>
